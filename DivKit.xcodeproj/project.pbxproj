@@ -1154,6 +1154,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D926AECC2B8D0C27000B7CF8 /* dummy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dummy.h; sourceTree = "<group>"; };
+		D926AECE2B8D0C48000B7CF8 /* dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dummy.m; sourceTree = "<group>"; };
 		D954CECC2B7F8AC000BDAE97 /* libDivKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDivKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D954CED72B7F8AEE00BDAE97 /* DivKitComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivKitComponents.swift; sourceTree = "<group>"; };
 		D954CED82B7F8AEE00BDAE97 /* DivSafeAreaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivSafeAreaManager.swift; sourceTree = "<group>"; };
@@ -2288,9 +2290,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D926AECA2B8D0BEF000B7CF8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D926AECB2B8D0C01000B7CF8 /* DivKit */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D926AECB2B8D0C01000B7CF8 /* DivKit */ = {
+			isa = PBXGroup;
+			children = (
+				D926AECD2B8D0C2E000B7CF8 /* include */,
+				D926AECE2B8D0C48000B7CF8 /* dummy.m */,
+			);
+			path = DivKit;
+			sourceTree = "<group>";
+		};
+		D926AECD2B8D0C2E000B7CF8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D926AECC2B8D0C27000B7CF8 /* dummy.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		D954CEC32B7F8AC000BDAE97 = {
 			isa = PBXGroup;
 			children = (
+				D926AECA2B8D0BEF000B7CF8 /* Sources */,
 				D954CECE2B7F8AC000BDAE97 /* DivKit */,
 				D954D23A2B7F8B1700BDAE97 /* DivKitExtensions */,
 				D954D2802B7F8B4100BDAE97 /* LayoutKit */,
